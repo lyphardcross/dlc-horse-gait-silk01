@@ -6,7 +6,7 @@ This project aims to build a gait analysis model for racehorses using DeepLabCut
 
 ## 🧠 Workflow
 
-1. Manual annotation done on `2025_silk_01`
+1. Manual annotation done on `2025_silk_01_nologo`
 2. DLC training (iteration-0 ~ 5)
 3. Best model: `snapshot-best-050.pt`
 4. Inference with labeled videos in progress

@@ -1,0 +1,20 @@
+# 除外: DeepLabCutによる自動生成ファイル（画像・h5）
+labeled-data/**/*.png
+labeled-data/**/*.h5
+
+# 除外: DLCのトレーニング済みモデルや中間成果物
+dlc-models/
+dlc-models-pytorch/
+training-datasets/
+evaluation-results-pytorch/
+videos/
+
+# 除外: その他のキャッシュ・ログ
+*.pickle
+*.pkl
+*.log
+*.bak
+*.tmp
+
+# macOS 系の不要ファイル
+.DS_Store

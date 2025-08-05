@@ -5,86 +5,94 @@ date: Aug2
 multianimalproject: false
 identity:
 
+
 # Project path (change when moving around)
-project_path: /Users/kotakawano/Desktop/silk01-lyphardcross-2025-08-02
+project_path: /Users/kotakawano/Desktop/dlc-horse-gait-silk01
+
 
 # Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
 engine: pytorch
+
 
 # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
   /Users/kotakawano/Documents/2025_silk_01_nologo.mp4:
     crop:
 bodyparts:
-  - nose
-  - poll
-  - withers
-  - croup
-  - LF_carpi
-  - LF_fetlock
-  - LF_hoof_tip
-  - RF_carpi
-  - RF_fetlock
-  - RF_hoof_tip
-  - LH_hock
-  - LH_fetlock
-  - LH_hoof_tip
-  - RH_hock
-  - RH_fetlock
-  - RH_hoof_tip
+- nose
+- poll
+- withers
+- croup
+- LF_carpi
+- LF_fetlock
+- LF_hoof_tip
+- RF_carpi
+- RF_fetlock
+- RF_hoof_tip
+- LH_hock
+- LH_fetlock
+- LH_hoof_tip
+- RH_hock
+- RH_fetlock
+- RH_hoof_tip
 
 # Fraction of video to start/stop when extracting frames for labeling/refinement
 
 # Fraction of video to start/stop when extracting frames for labeling/refinement
 
 # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
 
 # Fraction of video to start/stop when extracting frames for labeling/refinement
 start: 0
 stop: 1
 numframes2pick: 200
 
+
 # Plotting configuration
 skeleton:
-  - - nose
-    - poll
-  - - RH_hock
-    - RH_fetlock
-  - - withers
-    - LF_carpi
-  - - poll
-    - withers
-  - - LH_hock
-    - LH_fetlock
-  - - withers
-    - RF_carpi
-  - - croup
-    - LH_hock
-  - - withers
-    - croup
-  - - LH_fetlock
-    - LH_hoof_tip
-  - - LF_carpi
-    - LF_fetlock
-  - - RF_fetlock
-    - RF_hoof_tip
-  - - croup
-    - RH_hock
-  - - LF_fetlock
-    - LF_hoof_tip
-  - - RH_fetlock
-    - RH_hoof_tip
-  - - RF_carpi
-    - RF_fetlock
+- - nose
+  - poll
+- - RH_hock
+  - RH_fetlock
+- - withers
+  - LF_carpi
+- - poll
+  - withers
+- - LH_hock
+  - LH_fetlock
+- - withers
+  - RF_carpi
+- - croup
+  - LH_hock
+- - withers
+  - croup
+- - LH_fetlock
+  - LH_hoof_tip
+- - LF_carpi
+  - LF_fetlock
+- - RF_fetlock
+  - RF_hoof_tip
+- - croup
+  - RH_hock
+- - LF_fetlock
+  - LF_hoof_tip
+- - RH_fetlock
+  - RH_hoof_tip
+- - RF_carpi
+  - RF_fetlock
 skeleton_color: black
 pcutoff: 0.6
 dotsize: 12
 alphavalue: 0.7
 colormap: rainbow
 
+
 # Training,Evaluation and Analysis configuration
 TrainingFraction:
-  - 0.95
+- 0.95
 iteration: 5
 default_net_type: resnet_50
 default_augmenter: default
@@ -92,6 +100,7 @@ snapshotindex: -1
 detector_snapshotindex: -1
 batch_size: 8
 detector_batch_size: 1
+
 
 # Cropping Parameters (for analysis and outlier frame detection)
 cropping: false
@@ -101,11 +110,13 @@ x2: 3840
 y1: 0
 y2: 2160
 
+
 # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
 corner2move2:
-  - 50
-  - 50
+- 50
+- 50
 move2corner: true
+
 
 # Conversion tables to fine-tune SuperAnimal weights
 SuperAnimalConversionTables:
